@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  inceptialai:
+    container_name: inceptiaai
+    build:
+      context: .
+      dockerfile: compose/local/python/Dockerfile
+    restart: on-failure:5
+    command: /start
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    tty: true
+    stdin_open: true

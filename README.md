@@ -1,4 +1,4 @@
-# Inceptia challenge
+# Inceptia
 ¿
 El challenge cuenta con un archivo docker-compose, el cuál sirve para poder correr el programa.
 ```
